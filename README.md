@@ -31,6 +31,25 @@ just a thin API wrapper to fix some of my most pressing issues.
 
 
 
+API
+---
+
+This module exports an object that holds these functions:
+
+### .fromUint8Array(fileBytes)
+
+Returns a promise for the already-parsed PSD file object.
+Automatically detects and unpacks gzip compression.
+
+
+
+### .fromFile(pathOrUrl)
+
+Like `.fromUint8Array()` but non-blockingly reads a file
+from disk (node.js only)
+or downloads it from a URL (not implemented yet).
+
+
 
 
 
