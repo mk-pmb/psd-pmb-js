@@ -1,5 +1,5 @@
 { "name": "psd-pmb",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Embrace and extend psd.js",
   "keywords": ["psd"],
 
@@ -16,13 +16,21 @@
 
   "private": false, "license": "MIT",
 
-  "main": "index.js",
+  "main": "index.node.js",
   "scripts": { "test": "elp && nodemjs test/all.mjs" },
   "directories": { "test": "test" },
   "eslintConfig": { "extends": "nodejs-pmb" },
 
-  "dependencies": {},
+  "dependencies": {
+    "fflate": "^0.8.2",
+    "psd": "^3.3.0"
+  },
   "devDependencies": {
+    "eslint-config-nodejs-pmb": "^0.3.6",
+    "eslint-plugin-json-light-pmb": "^1.0.7",
+    "eslint-plugin-n": "^17.10.2",
+    "eslint-pretty-pmb": "^1.0.5",
+    "nodemjs": "^0.1.15"
   },
 
 
